@@ -1,14 +1,18 @@
+require('dotenv').config();
+
+const { USER, PASSWORD, SERVER, DATABASE, PORT, INSTANCE_NAME } = process.env;
+
 const config = {
-  user: 'foo',
-  password: 'foo',
-  server: '127.0.0.1',
-  database: 'Products',
+  user: USER,
+  password: PASSWORD,
+  server: SERVER,
+  database: DATABASE,
   options: {
     trustedconnection: true,
     enableArithAbort: true,
-    instancename: 'SQLEXPRESS',
+    instancename: INSTANCE_NAME,
   },
-  port: 55892,
+  port: PORT,
 };
 
 module.exports = config;
