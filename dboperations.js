@@ -42,7 +42,7 @@ async function addOrder(order) {
 }
 
 module.exports = {
-  getOrders: getOrders,
-  getOrder: getOrder,
+  // getOrders: getOrders,
+  // getOrder: getOrder,
   addOrder: addOrder,
 };

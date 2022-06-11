@@ -37,7 +37,10 @@ router.route('/patients').post((request, response) => {
     response.status(201).json(result);
   });
 });
+router.route('/azim').get((req, res) => {
+  res.send({ title: 'GeeksforGeeks' });
+});
 
-var port = process.env.PORT || 8090;
-app.listen(port);
-console.log('Patients API is running at ' + port);
+const port = 8080;
+app.listen(port, () => console.log('Patients API is running at ' + port));
+
